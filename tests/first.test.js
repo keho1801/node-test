@@ -5,3 +5,7 @@ test('one', () => {
 test('two', () => {
   expect("2").toEqual("2");
 });
+
+test('three', () => {
+  expect("3").toEqual("3");
+});
