@@ -73,6 +73,7 @@ jobs:
       run: |
         # Build a docker container and
         # push it to ECR so that it can
+        echo "ECR REGISTRY::$ECR_REGISTRY"
         # be deployed to ECS.
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
